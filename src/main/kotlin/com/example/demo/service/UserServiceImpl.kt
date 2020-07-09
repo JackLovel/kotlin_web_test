@@ -14,4 +14,16 @@ class UserServiceImpl : UserService{
     override fun save(user: User) {
         userRepo?.save(user)
     }
+
+    override fun getAllUser(): MutableList<User>? {
+        return userRepo?.findAll()
+    }
+
+    override fun findById(userId: Long): User? {
+        return userRepo?.getOne(userId)
+    }
+
+    override fun deleteById(userId: Long) {
+        userRepo?.deleteById(userId)
+    }
 }

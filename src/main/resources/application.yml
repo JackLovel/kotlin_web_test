@@ -12,6 +12,6 @@ spring:
       properties:
         hibernate:
           hbm2ddl:
-            auto: create
+            auto: update
           dialect: org.hibernate.dialect.MySQL5InnoDBDialect
   show-sql: true
