@@ -2,7 +2,8 @@ package com.example.demo.repo
 
 import com.example.demo.model.User
 import org.springframework.data.jpa.repository.JpaRepository
-import org.springframework.data.jpa.repository.JpaSpecificationExecutor
+import org.springframework.stereotype.Repository
 
-interface UserRepo : JpaRepository<User, Long>, JpaSpecificationExecutor<User> {
+@Repository
+interface UserRepo : JpaRepository<User, Long> {
 }
